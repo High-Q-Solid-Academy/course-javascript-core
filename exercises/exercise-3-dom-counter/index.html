@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>High Q Academy - Counter Lab</title>
+</head>
+<body>
+  <div id="counter-app">
+    <h2>High Q Score Tracker</h2>
+    <div id="count-display">0</div>
+    <button id="btn-increment">+ Increment</button>
+    <button id="btn-decrement">- Decrement</button>
+    <button id="btn-reset">Reset</button>
+  </div>
+
+  <script type="module">
+    import { setupCounter } from './counter.js';
+    setupCounter(document.getElementById('counter-app'));
+  </script>
+</body>
+</html>

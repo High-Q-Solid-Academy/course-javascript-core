@@ -1,0 +1,27 @@
+name: High Q JavaScript Core Autograder
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+  workflow_dispatch:
+
+jobs:
+  grade:
+    name: Run JavaScript Lab Tests
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Install Dependencies
+        run: npm ci || npm install
+
+      - name: Execute JavaScript Autograding Suite
+        run: npm test
