@@ -1,28 +1,16 @@
-// TODO: Implement createTaskManager
-export function createTaskManager() {
-  let tasks = [];
+/**
+ * High Q Solid Academy - Exercise 5: Capstone Task Manager
+ * "Always Ahead of Others"
+ * 
+ * TODO:
+ * Implement createTaskManager():
+ * - Private state array of task objects.
+ * - addTask(title): adds { id: Date.now(), title, completed: false } and returns it.
+ * - toggleTask(id): flips completed boolean of matching task.
+ * - getCompletedTasks(): returns array of completed tasks.
+ * - getPendingTasks(): returns array of pending tasks.
+ */
 
-  return {
-    addTask(title) {
-      const task = { id: Date.now() + Math.random(), title, completed: false };
-      tasks.push(task);
-      return task;
-    },
-    toggleTask(id) {
-      const task = tasks.find(t => t.id === id);
-      if (task) {
-        task.completed = !task.completed;
-      }
-      return task;
-    },
-    getCompletedTasks() {
-      return tasks.filter(t => t.completed);
-    },
-    getPendingTasks() {
-      return tasks.filter(t => !t.completed);
-    },
-    getAllTasks() {
-      return [...tasks];
-    }
-  };
+export function createTaskManager() {
+  // TODO: Your task manager closure factory here
 }

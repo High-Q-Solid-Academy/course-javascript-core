@@ -1,18 +1,25 @@
-// TODO: Implement the functions according to README.md
+/**
+ * High Q Solid Academy - Exercise 1: JavaScript Fundamentals & Functions
+ * "Always Ahead of Others"
+ * 
+ * TODO:
+ * 1. Implement calculateAverage(scores):
+ *    - Return the arithmetic mean of scores array.
+ *    - If scores is empty or falsy, return 0.
+ * 2. Implement isPassingGrade(score):
+ *    - Return true if score >= 50, otherwise false.
+ * 3. Implement formatStudentName(firstName, lastName):
+ *    - Return formatted string "LASTNAME, FIRSTNAME" in all uppercase.
+ */
 
 export function calculateAverage(scores) {
-  // Return the average of scores or 0 if array is empty
-  if (!scores.length) return 0;
-  const total = scores.reduce((sum, score) => sum + score, 0);
-  return total / scores.length;
+  // TODO: Your code here
 }
 
 export function isPassingGrade(score) {
-  // Return true if score >= 50, otherwise false
-  return score >= 50;
+  // TODO: Your code here
 }
 
 export function formatStudentName(firstName, lastName) {
-  // Return uppercase "LASTNAME, FIRSTNAME"
-  return `${lastName}, ${firstName}`.toUpperCase();
+  // TODO: Your code here
 }

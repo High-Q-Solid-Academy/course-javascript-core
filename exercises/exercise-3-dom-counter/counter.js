@@ -1,30 +1,16 @@
-// TODO: Implement setupCounter function
+/**
+ * High Q Solid Academy - Exercise 3: Interactive DOM Component
+ * "Always Ahead of Others"
+ * 
+ * TODO:
+ * Implement setupCounter(containerEl):
+ * - Track score count (starting at the number inside #count-display).
+ * - Attach click listener to #btn-increment: increase score by 1.
+ * - Attach click listener to #btn-decrement: decrease score by 1 (minimum 0).
+ * - Attach click listener to #btn-reset: reset score to 0.
+ * - Update #count-display.textContent on each click.
+ */
+
 export function setupCounter(containerEl) {
-  let count = 0;
-  const display = containerEl.querySelector('#count-display');
-  const incBtn = containerEl.querySelector('#btn-increment');
-  const decBtn = containerEl.querySelector('#btn-decrement');
-  const resetBtn = containerEl.querySelector('#btn-reset');
-
-  // Attach event listeners to incBtn, decBtn, and resetBtn
-  const updateDisplay = () => {
-    display.textContent = String(count);
-  };
-
-  incBtn.addEventListener('click', () => {
-    count += 1;
-    updateDisplay();
-  });
-
-  decBtn.addEventListener('click', () => {
-    count -= 1;
-    updateDisplay();
-  });
-
-  resetBtn.addEventListener('click', () => {
-    count = 0;
-    updateDisplay();
-  });
-
-  updateDisplay();
+  // TODO: Your DOM manipulation code here
 }

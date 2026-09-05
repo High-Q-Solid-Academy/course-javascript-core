@@ -1,18 +1,24 @@
-// TODO: Implement the functions according to README.md
+/**
+ * High Q Solid Academy - Exercise 2: Arrays & Objects Mastery
+ * "Always Ahead of Others"
+ * 
+ * TODO:
+ * 1. Implement filterPassingStudents(students, passThreshold = 50):
+ *    - Return new array of students with score >= passThreshold.
+ * 2. Implement getStudentNames(students):
+ *    - Return array of student name strings.
+ * 3. Implement calculateClassAverage(students):
+ *    - Return average score of students array, or 0 if empty.
+ */
 
 export function filterPassingStudents(students, passThreshold = 50) {
-  // Use filter()
-  return students.filter(student => student.score >= passThreshold);
+  // TODO: Your code here
 }
 
 export function getStudentNames(students) {
-  // Use map()
-  return students.map(student => student.name);
+  // TODO: Your code here
 }
 
 export function calculateClassAverage(students) {
-  // Use reduce()
-  if (!students.length) return 0;
-  const total = students.reduce((sum, student) => sum + student.score, 0);
-  return total / students.length;
+  // TODO: Your code here
 }
