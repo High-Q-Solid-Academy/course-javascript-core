@@ -7,4 +7,24 @@ export function setupCounter(containerEl) {
   const resetBtn = containerEl.querySelector('#btn-reset');
 
   // Attach event listeners to incBtn, decBtn, and resetBtn
+  const updateDisplay = () => {
+    display.textContent = String(count);
+  };
+
+  incBtn.addEventListener('click', () => {
+    count += 1;
+    updateDisplay();
+  });
+
+  decBtn.addEventListener('click', () => {
+    count -= 1;
+    updateDisplay();
+  });
+
+  resetBtn.addEventListener('click', () => {
+    count = 0;
+    updateDisplay();
+  });
+
+  updateDisplay();
 }
